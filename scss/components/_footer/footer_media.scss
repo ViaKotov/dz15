@@ -1,0 +1,25 @@
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer__wrapper .footer__content {
+    justify-content: center;
+  }
+  footer .footer__wrapper .footer__content .footer__social ul {
+    display: flex;
+    padding: 15px 0;
+  }
+  footer .footer__wrapper .footer__content .footer__copyright {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+}

@@ -1,0 +1,51 @@
+.offer{
+    padding-top: 110px;
+    @extend %row-flexed;
+    align-items: flex-start;
+    justify-content: space-between;
+    .offer__description{
+        @extend %column-flexed;
+        color: $offer-font-color;
+        width: 50%;
+        .offer__description-title{
+            span{
+                @extend %dark-title;
+            }
+        }
+        .offer__description-subtitle{
+            padding: 28px 0 0;
+            max-width: 520px;
+            @extend %dark-subtitle;
+        }
+        .offer__description-link{
+            padding: 45px 0 0;
+            a{
+                @include valid-button(15px, capitalize, none, $offer-btn-font-color, bold, solid, 2px, $offer-btn-border-color, 5px, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color);
+                transition: $global-transition;
+            }
+        }
+    }
+    .offer__items{
+        @extend %row-flexed;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: space-between;
+        .offer__items-item{
+            @extend %column-flexed;
+            max-width: 50%;
+            padding: 0 0 50px;
+            .offer__item-icon{
+                padding: 0 0 20px;
+            }
+            .offer__item-title{
+                text-transform: capitalize;
+                font-size: 24px;
+                color: $offer-font-color;
+            }
+            .offer__item-description{
+                line-height: 28px;
+                font-size: 16px;
+            }
+        }
+    }
+}

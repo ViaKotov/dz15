@@ -1,0 +1,48 @@
+.subscribe__wrapper{
+    width: 100%;
+    background-color: $third-bg-color;
+    .subscribe{
+        padding: 140px 0;
+        @extend %column-flexed;
+        align-items: center;
+        .subscribe__title{
+            font-size:$title-font-size;
+            color: #fdfcf8;
+            font-weight: bold;
+        }
+        .subscribe__subtitle{
+            padding: 32px 0 0;
+            color: #fdfcf8;
+        }
+        .subscribe__form{
+        @extend %row-flexed;
+        justify-content: center;
+        align-content: center;
+        padding: 60px 0 0;
+        width: 100%;
+        
+            .subscribe__form-input{
+                padding: 0 20px 0 0;
+                width: 100%;
+                max-width: 520px;
+                input[type=email]{
+                    border-color: transparent;
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 25px 36px;
+                    color: $offer-font-color;
+                    @include placeholder-color($offer-font-color);
+                    @extend %remove-focus-outline;
+                }
+            }
+            .subscribe__form-button{
+                width: 100%;
+                max-width: 214px;
+                input[type=button]{
+                    width: 100%;
+                    @include form-button($banner-btn-bg-color, $banner-btn-font-color, $banner-btn-bg-color, $banner-btn-font-color);
+                }
+            }
+        }
+    }
+}

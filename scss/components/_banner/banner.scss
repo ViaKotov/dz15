@@ -1,0 +1,50 @@
+.banner__wrapper{
+    width: 100%;
+    padding: 100px 0 111px;
+    background-color: $second-bg-color;
+    .banner{
+        max-width: $body-max-width;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .banner__description{
+            @extend %column-flexed;
+            text-align: left;
+            color: $banner-font-color;
+            width: 50%;
+            .banner__description-title{
+                display: inline;
+                span{
+                    display: inline-block;
+                    font-weight: 1000;
+                    font-size: 55px;
+                    text-transform: uppercase;
+                } 
+            }
+            .banner__description-subtitle{
+                padding: 10px 0 0;
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    max-width: 520px;
+                }
+                
+            }
+            .banner__description-link{
+                padding: 30px 0 0;
+                a{
+                    @include valid-button(16px, capitalize, none, $banner-btn-font-color, 600, solid, 2px, $offer-btn-border-color, 5px, $banner-btn-bg-color, $banner-btn-bg-color, $offer-btn-bg-color);
+                    transition: .2s;
+                }
+            } 
+        }
+        .banner__video
+        {
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0px 0px 60px rgba($color: #7c7a71, $alpha: 0.6);
+        }
+    }
+}
+

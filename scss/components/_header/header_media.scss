@@ -1,0 +1,28 @@
+@media screen and (max-width: 1000px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  header .menu {
+    font-size: 12px;
+  }
+  header .menu .menu__list .menu__list-item a {
+    padding: 15px 6px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+
+}
+/*
+1000px
+992px
+767px
+500px
+*/

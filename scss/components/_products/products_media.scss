@@ -1,0 +1,40 @@
+
+
+@media screen and (max-width: 1000px) {
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 767px) {
+  .products__wrapper .products .products__title, .offer .offer__description .offer__description-title span {
+    font-size: 28px;
+  }
+  .products__wrapper .products {
+    padding: 90px 24px 0;
+  }
+  .products__wrapper .products .products__menu ul li {
+    padding: 0;
+
+  }
+  .products__wrapper .products .products__menu ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .products__wrapper .products .products__items .products__item {
+    padding: 0 20px 20px;
+    width: 50%;
+  }
+  .products__wrapper .products .products__items .products__item img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+}

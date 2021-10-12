@@ -1,0 +1,49 @@
+%column-flexed{
+    display: flex;
+    flex-direction: column;
+}
+
+%row-flexed{
+    display: flex;
+    flex-direction: row;
+}
+
+%button-padding{
+    padding: 16px 70px;
+}
+
+%form-border-radius{
+    border-radius: 5px;
+}
+
+%dark-title{
+    text-transform: uppercase;
+    font-size: $title-font-size;
+    font-weight: bold;
+    color: $offer-font-color;
+}
+
+%medium-title{
+    text-transform: uppercase;
+    font-size: $title-medium-font-size;
+    font-weight: bold;
+    color: $title-medium-font-color;
+}
+
+%medium-subtitle{
+    font-size: $subtitle-medium-font-size;
+    color: $subtitle-medium-font-color;
+}
+
+%dark-subtitle{
+    line-height: 28px;
+    font-size: $subtitle-font-size;
+    color: $offer-font-color;
+}
+
+
+%remove-focus-outline{
+    &:focus-visible{
+        outline: none;
+    }
+}

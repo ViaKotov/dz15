@@ -1,0 +1,61 @@
+@mixin valid-button($font-size, $txt-transform, $txt-deco, $txt-col, $font-weight, $brdr-type, $brdr-width, $brdr-col, $brdr-rad, $bg-col, $txt-hover-col, $txt-hover-bg-col){
+    @extend %button-padding;
+    font-size: $font-size;
+    text-transform: $txt-transform;
+    text-decoration: $txt-deco;
+    color: $txt-col;
+    font-weight: $font-weight;
+    border: $brdr-type $brdr-width $brdr-col;
+    border-radius: $brdr-rad;
+    background-color: $bg-col;
+    display: inline-block;
+    &:hover{
+        color: $txt-hover-col;
+        background-color: $txt-hover-bg-col;
+    }
+}
+
+@mixin list-link($link-color, $link-hover-color){
+    a{
+        text-decoration: none;
+        color: $link-color;
+        transition: $global-transition;
+        &:hover{
+            color: $link-hover-color;
+        }
+    }
+}
+
+@mixin pseudo-strip($margin-top, $margin-left, $margin-bottom, $margin-right){
+    &::after{
+        margin: $margin-top $margin-left $margin-bottom $margin-right;
+        content: '';
+        display: block;
+        height: 2px;
+        width: 131px;
+        background-color: $global-strip-color;
+    }
+}
+
+@mixin form-button($bg-color, $text-color, $bg-hover-color, $text-hover-color){
+    background-color: $bg-color;
+    border: solid 2px $bg-color;
+    padding: 25px 50px;
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    @extend %form-border-radius;
+    transition: $global-transition;
+    &:hover{
+        border-color: $bg-hover-color;
+        background-color: $text-hover-color;
+        color: $bg-hover-color;
+        cursor: pointer;
+    }
+}
+
+@mixin placeholder-color($placeholder-color){
+    &::placeholder{
+        color: $placeholder-color;
+    }
+}
