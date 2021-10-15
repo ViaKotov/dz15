@@ -1,10 +1,29 @@
 @media screen and (max-width: 1000px) {
-
+  .banner__wrapper .banner .banner__video {
+    width: 50%;
+  }
+    .banner__wrapper .banner {
+      max-width: 1000px;
+      padding: 0 24px;
+    }
 }
 
 
 @media screen and (max-width: 992px) {
-
+  .banner__wrapper .banner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .banner__wrapper .banner .banner__description {
+    width: 100%;
+    padding: 0 24px;
+  }
+  .banner__wrapper .banner .banner__video {
+    max-width: 100%;
+  }
+  .banner__wrapper .banner .banner__description .banner__description-link {
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -16,7 +35,7 @@
     width: 100%;
   }
   .banner__wrapper .banner .banner__video {
-    width: 100%;
+    display: none;
   }
   .banner__wrapper .banner .banner__description .banner__description-title span {
     font-size: 36px;

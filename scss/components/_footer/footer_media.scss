@@ -4,11 +4,13 @@
 }
 
 @media screen and (max-width: 992px) {
-
+  .footer__wrapper .footer__content {
+    padding: 0 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  footer .footer__wrapper .footer__content {
+  .footer__wrapper .footer__content {
     justify-content: center;
   }
   footer .footer__wrapper .footer__content .footer__social ul {

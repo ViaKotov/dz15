@@ -17,10 +17,15 @@
         }
         .products__menu{
             padding: 82px 0 0;
+            width: 50%;
             ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-content: center;
+                width: 100%;
                 li{
-                    padding: 0 54px 0 0;
-                    display: inline;
+                    list-style: none;
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: $products__menu-font-size;

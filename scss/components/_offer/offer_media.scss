@@ -4,7 +4,17 @@
 
 
 @media screen and (max-width: 992px) {
+  .offer {
+    flex-wrap: wrap;
+    padding: 110px 24px;
+  }
 
+  .offer .offer__description, .offer .offer__items {
+    width: 100%;
+  }
+  .offer .offer__description .offer__description-link {
+    padding: 45px 0;
+  }
 }
 
 @media screen and (max-width: 767px) {

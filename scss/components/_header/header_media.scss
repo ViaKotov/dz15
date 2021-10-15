@@ -1,10 +1,17 @@
 @media screen and (max-width: 1000px) {
-
+  .contact .contact__feedback::after {
+    display: none;
+  }
 }
 
 
 @media screen and (max-width: 992px) {
-
+  header .menu {
+    font-size: 14px;
+  }
+  header .menu .menu__list .menu__list-item a {
+    padding: 20px 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
