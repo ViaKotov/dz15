@@ -1,9 +1,8 @@
 .our-team{
-    padding: 0 0 110px;
+    padding: 102px 0 110px;
     .our-team__text{
         color: $offer-font-color;
         .our-team__text-title{
-            padding: 102px 0 0;
             @extend %dark-title;
         }
         .our-team__text-subtitle{
@@ -38,17 +37,14 @@
                 .our-team__person-links{
                     padding: 0 0 60px;
                     ul{
-                        
                         display: flex;
                         flex-wrap: wrap;
+                        justify-content: space-between;
                         text-transform: capitalize;
                         font-style: italic;
                         font-size: 18px;
                         li{
                             list-style-type: none;
-                            &:not(:last-child){
-                                padding: 0 48px 0 0;
-                            }
                             a{
                                 color: $offer-font-color;
                                 text-decoration: none;
@@ -75,22 +71,7 @@
                         }
                     }
                     a{
-                        position: absolute;
-                        width: 100%;
-                        padding: 10px 5px;
-                        bottom: 0;
-                        left: 0;
-                        background: transparent;
-                        color: transparent;
-                        
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        text-align: center;
-                        transition: $global-transition;
-                        &:hover{
-                            color:$nav-font-color;
-                            background: rgba($color: #000000, $alpha: 0.8);
-                        }
+                        @extend %image-hover-link;
                     }
                 }
             }

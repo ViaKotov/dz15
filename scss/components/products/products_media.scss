@@ -1,0 +1,100 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  .products__wrapper{
+    padding: 0 24px;
+    .products{
+      .products__title{
+        span{
+          font-size: $adaptive-size-lg-title-font-size;
+        }
+      }
+      .products__subtitle{
+        span{
+          font-size: $adaptive-size-lg-subtitle-font-size;
+        }
+      }
+      .products__menu{
+        width: 100%;
+        ul{
+          font-size: $adaptive-size-lg-products-links-font-size;
+          justify-content: space-evenly;
+        }
+      }
+      .products__items{
+        justify-content: center;
+        .products__item{
+          padding: 0 10px 20px;
+          width: calc(25% - 10px);
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-md) {
+
+}
+
+@media screen and (max-width: $adaptive-size-sm) {
+  .products__wrapper{
+    .products{
+      .products__title{
+        span{
+          font-size: $adaptive-size-sm-title-font-size;
+        }
+      }
+      .products__subtitle{
+        span{
+          font-size: $adaptive-size-sm-subtitle-font-size;
+        }
+      }
+      .products__menu{
+        width: 100%;
+        ul{
+          font-size: $adaptive-size-sm-header-links-font-size;
+          justify-content: space-evenly;
+        }
+      }
+      .products__items{
+        justify-content: center;
+        .products__item{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  .products__wrapper{
+    .products{
+      .products__title{
+        span{
+          font-size: $adaptive-size-xsm-title-font-size;
+        }
+      }
+      .products__subtitle{
+        span{
+          font-size: $adaptive-size-xsm-subtitle-font-size;
+        }
+      }
+      .products__menu{
+        width: 100%;
+        ul{
+          font-size: $adaptive-size-xsm-header-links-font-size;
+          justify-content: space-between;
+        }
+      }
+      .products__items{
+        width: 100%;
+        flex-direction: column;
+        .products__item{
+          width: calc(100% - 10px);
+        }
+      }
+    }
+  }
+}

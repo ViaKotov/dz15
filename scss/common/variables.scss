@@ -1,6 +1,7 @@
+//=============== [ COMMON VARIABLES START ] ===================
+//=============== [ GLOBAL ] ===================
 $global-transition: .2s;
 $global-strip-color: #ff3f40;
-
 
 $main-bg-color: #ffffff;
 $second-bg-color: #f6f2f2;
@@ -8,20 +9,6 @@ $third-bg-color: #f5f0dd;
 
 $body-main-font: 'Open Sans', sans-serif;
 $body-max-width: 1250px;
-
-$nav-bg-common-color: #313030;
-$nav-bg-hover-color: #ff3f40;
-$nav-font-color: #e0e0e0;
-
-$banner-font-color: #000000;
-$banner-btn-bg-color: #ff2d2d;
-$banner-btn-font-color: #ffffff;
-
-$offer-bg-color: #ffffff;
-$offer-font-color: #333333;
-$offer-btn-bg-color: #ffffff;
-$offer-btn-border-color: #ff0000;
-$offer-btn-font-color: #ff2d2d;
 
 $title-font-size: 42px;
 $subtitle-font-size: 16px;
@@ -31,12 +18,217 @@ $title-medium-font-color: #d5d5d5;
 
 $subtitle-medium-font-size: 16px;
 $subtitle-medium-font-color: #d5d5d5;
-
+//=============== [ HEADER ] ===================
+$nav-bg-common-color: #313030;
+$nav-bg-hover-color: #ff3f40;
+$nav-font-color: #e0e0e0;
+//=============== [ BANNER ] ===================
+$banner-font-color: #000000;
+$banner-btn-bg-color: #ff2d2d;
+$banner-btn-font-color: #ffffff;
+$banner-button-vertical-padding: 20px;
+$banner-button-horizontal-padding: 64px;
+//=============== [ OFFER ] ====================
+$offer-bg-color: #ffffff;
+$offer-font-color: #333333;
+$offer-btn-bg-color: #ffffff;
+$offer-btn-border-color: #ff0000;
+$offer-btn-font-color: #ff2d2d;
+$offer-button-vertical-padding: 20px;
+$offer-button-horizontal-padding: 64px;
+$offer-button-border-width: 2px;
+$offer-button-border-radius: 5px;
+//=============== [ PRODUCTS ] =================
 $products-border-color: #ececec;
 $products__menu-font-size: 18px;
 $products__menu-link-color: #4c4c4c;
 $products__menu-link-hover-color: #ff3f40;
+//=============== [ OUR-TEAM ] =================
 
-
+//=============== [ SUBSCRIBE ] ================
+$subscribe-form-input-bg-color: #ffffff;
+$subscribe-form-input-placeholder-color: #6f6f6f;
+$subscribe-form-input-text-color: #6f6f6f;
+//=============== [ CONTACT-FORM ] =============
 $contact-form-items-bg-color: #e5e5e5;
 $contact-info-bg-color: #2d2d2d;
+$contact-form-input-bg-color: #e5e5e5;
+$contact-form-items-placeholder-color: #6f6f6f;
+$contact-form-items-text-color: #6f6f6f;
+//=============== [ FOOTER ] ===================
+
+
+
+
+
+
+
+//=============== [ ADAPTIVE VARIABLES START ] ===================
+
+
+$adaptive-size-lg: 1000px;
+$adaptive-size-md: 992px;
+$adaptive-size-sm: 767px;
+$adaptive-size-xsm: 500px;
+
+//================= [ LG ] =================
+
+//=============== [ GLOBAL ] ===================
+$adaptive-size-lg-main-title-font-size: 5vw;
+$adaptive-size-lg-main-subtitle-font-size: 1.7vw;
+$adaptive-size-lg-title-font-size: 4.2vw;
+$adaptive-size-lg-subtitle-font-size: 1.6vw;
+$adaptive-size-lg-button-vertical-padding: 1.6vw;
+$adaptive-size-lg-button-horizontal-padding: 7vw;
+$adaptive-size-lg-input-vertical-padding: 2.5vw;
+$adaptive-size-lg-input-horizontal-padding: 3.6vw;
+$adaptive-size-lg-input-border-radius: 0.5vw;
+//=============== [ HEADER ] ===================
+$adaptive-size-lg-header-links-font-size: 1.4vw;
+//=============== [ BANNER ] ===================
+$adaptive-size-lg-banner-button-font-size: 1.6vw;
+$adaptive-size-lg-banner-button-vertical-padding: 2vw;
+$adaptive-size-lg-banner-button-horizontal-padding: 6.4vw;
+$adaptive-size-lg-banner-button-border-width: 0.2vw;
+$adaptive-size-lg-banner-button-border-radius: 0.5vw;
+//=============== [ OFFER ] ====================
+$adaptive-size-lg-offer-item-title-font-size: 2.4vw;
+$adaptive-size-lg-offer-item-subtitle-font-size: 1.6vw;
+$adaptive-size-lg-offer-button-font-size: 1.6vw;
+$adaptive-size-lg-offer-button-vertical-padding: 2vw;
+$adaptive-size-lg-offer-button-horizontal-padding: 6.4vw;
+$adaptive-size-lg-offer-button-border-width: 0.2vw;
+$adaptive-size-lg-offer-button-border-radius: 0.5vw;
+//=============== [ PRODUCTS ] =================
+$adaptive-size-lg-products-links-font-size: 1.8vw;
+//=============== [ OUR-TEAM ] =================
+$adaptive-size-lg-our-team-person-name-font-size: 2.8vw;
+$adaptive-size-lg-our-team-person-details-font-size: 1.6vw;
+$adaptive-size-lg-our-team-links-font-size: 1.8vw;
+$adaptive-size-lg-our-team-member-link-font-size: 1.6vw;
+//=============== [ SUBSCRIBE ] ================
+$adaptive-size-lg-subscribe-input-vertical-padding: 2.5vw;
+$adaptive-size-lg-subscribe-input-horizontal-padding: 5vw;
+$adaptive-size-lg-subscribe-input-border-radius: 0.5vw;
+$adaptive-size-lg-subscribe-input-border-width: 0.2vw;
+//=============== [ CONTACT-FORM ] =============
+$adaptive-size-lg-contact-title-font-size: 2.4vw;
+$adaptive-size-lg-contact-details-font-size: 1.6vw;
+$adaptive-size-lg-contact-button-font-size: 1.6vw;
+$adaptive-size-lg-contact-button-vertical-padding: 2.5vw;
+$adaptive-size-lg-contact-button-horizontal-padding: 5vw;
+$adaptive-size-lg-contact-button-border-radius: 0.5vw;
+$adaptive-size-lg-contact-button-border-width: 0.2vw;
+//=============== [ FOOTER ] ===================
+$adaptive-size-lg-footer-font-size: 1.6vw;
+
+
+
+//================= [ SM ] =================
+
+//=============== [ GLOBAL ] ===================
+$adaptive-size-sm-main-title-font-size: 5vw;//
+$adaptive-size-sm-main-subtitle-font-size: 2.2vw;//
+$adaptive-size-sm-title-font-size: 3.5vw;//
+$adaptive-size-sm-subtitle-font-size: 2vw;//
+$adaptive-size-sm-button-vertical-padding: 1.6vw;
+$adaptive-size-sm-button-horizontal-padding: 7vw;
+$adaptive-size-sm-input-vertical-padding: 2.5vw;
+$adaptive-size-sm-input-horizontal-padding: 3.6vw;
+$adaptive-size-sm-input-border-radius: 0.5vw;
+//=============== [ HEADER ] ===================
+$adaptive-size-sm-header-links-font-size: 2vw;//
+//=============== [ BANNER ] ===================
+$adaptive-size-sm-banner-button-font-size: 2vw;//
+$adaptive-size-sm-banner-button-vertical-padding: 2vw;
+$adaptive-size-sm-banner-button-horizontal-padding: 6.4vw;
+$adaptive-size-sm-banner-button-border-width: 0.2vw;
+$adaptive-size-sm-banner-button-border-radius: 0.5vw;
+//=============== [ OFFER ] ====================
+$adaptive-size-sm-offer-item-title-font-size: 2.5vw;//
+$adaptive-size-sm-offer-item-subtitle-font-size: 1.8vw;//
+$adaptive-size-sm-offer-button-font-size: 2vw;//
+$adaptive-size-sm-offer-button-vertical-padding: 2vw;
+$adaptive-size-sm-offer-button-horizontal-padding: 6.4vw;
+$adaptive-size-sm-offer-button-border-width: 0.2vw;
+$adaptive-size-sm-offer-button-border-radius: 0.5vw;
+//=============== [ PRODUCTS ] =================
+$adaptive-size-sm-products-links-font-size: 1.8vw;
+//=============== [ OUR-TEAM ] =================
+$adaptive-size-sm-our-team-person-name-font-size: 3vw;
+$adaptive-size-sm-our-team-person-details-font-size: 2vw;
+$adaptive-size-sm-our-team-links-font-size: 2vw;
+$adaptive-size-sm-our-team-member-link-font-size: 2vw;
+//=============== [ SUBSCRIBE ] ================
+$adaptive-size-sm-subscribe-input-vertical-padding: 2.5vw;
+$adaptive-size-sm-subscribe-input-horizontal-padding: 5vw;
+$adaptive-size-sm-subscribe-input-border-radius: 0.5vw;
+$adaptive-size-sm-subscribe-input-border-width: 0.2vw;
+$adaptive-size-sm-subscribe-button-font-size: 2vw;//
+//=============== [ CONTACT-FORM ] =============
+$adaptive-size-sm-contact-title-font-size: 2.5vw;
+$adaptive-size-sm-contact-details-font-size: 1.8vw;
+$adaptive-size-sm-contact-button-font-size: 2vw;
+$adaptive-size-sm-contact-button-vertical-padding: 2.5vw;
+$adaptive-size-sm-contact-button-horizontal-padding: 5vw;
+$adaptive-size-sm-contact-button-border-radius: 0.5vw;
+$adaptive-size-sm-contact-button-border-width: 0.2vw;
+//=============== [ FOOTER ] ===================
+$adaptive-size-sm-footer-font-size: 1.8vw;
+
+
+//================= [ XSM ] =================
+
+//=============== [ GLOBAL ] ===================
+$adaptive-size-xsm-main-title-font-size: 7vw;
+$adaptive-size-xsm-main-subtitle-font-size: 3vw;
+$adaptive-size-xsm-title-font-size: 5vw;
+$adaptive-size-xsm-subtitle-font-size: 3vw;
+$adaptive-size-xsm-button-vertical-padding: 1.6vw;
+$adaptive-size-xsm-button-horizontal-padding: 7vw;
+$adaptive-size-xsm-input-vertical-padding: 2.5vw;
+$adaptive-size-xsm-input-horizontal-padding: 3.6vw;
+$adaptive-size-xsm-input-border-radius: 0.5vw;
+//=============== [ HEADER ] ===================
+$adaptive-size-xsm-header-links-font-size: 2.5vw;
+//=============== [ BANNER ] ===================
+$adaptive-size-xsm-banner-button-font-size: 2.5vw;
+$adaptive-size-xsm-banner-button-vertical-padding: 2vw;
+$adaptive-size-xsm-banner-button-horizontal-padding: 6.4vw;
+//=============== [ OFFER ] ====================
+$adaptive-size-xsm-offer-item-title-font-size: 3vw;
+$adaptive-size-xsm-offer-item-subtitle-font-size: 2.4vw;
+$adaptive-size-xsm-offer-button-font-size: 2.5vw;
+$adaptive-size-xsm-offer-button-vertical-padding: 2vw;
+$adaptive-size-xsm-offer-button-horizontal-padding: 6.4vw;
+$adaptive-size-xsm-offer-button-border-width: 0.2vw;
+$adaptive-size-xsm-offer-button-border-radius: 0.5vw;
+//=============== [ PRODUCTS ] =================
+$adaptive-size-xsm-products-links-font-size: 1.8vw;
+//=============== [ OUR-TEAM ] =================
+$adaptive-size-xsm-our-team-person-name-font-size: 4vw;
+$adaptive-size-xsm-our-team-person-details-font-size: 3vw;
+$adaptive-size-xsm-our-team-links-font-size: 3vw;
+$adaptive-size-xsm-our-team-member-link-font-size: 3vw;
+//=============== [ SUBSCRIBE ] ================
+$adaptive-size-xsm-subscribe-input-vertical-padding: 2.5vw;
+$adaptive-size-xsm-subscribe-input-horizontal-padding: 5vw;
+$adaptive-size-xsm-subscribe-input-border-radius: 0.5vw;
+$adaptive-size-xsm-subscribe-input-border-width: 0.2vw;
+$adaptive-size-xsm-subscribe-button-font-size: 3vw;
+//=============== [ CONTACT-FORM ] =============
+$adaptive-size-xsm-contact-title-font-size: 4vw;
+$adaptive-size-xsm-contact-details-font-size: 3vw;
+$adaptive-size-xsm-contact-button-font-size: 3vw;
+$adaptive-size-xsm-contact-button-vertical-padding: 2.5vw;
+$adaptive-size-xsm-contact-button-horizontal-padding: 5vw;
+$adaptive-size-xsm-contact-button-border-radius: 0.5vw;
+$adaptive-size-xsm-contact-button-border-width: 0.2vw;
+//=============== [ FOOTER ] ===================
+$adaptive-size-xsm-footer-font-size: 3vw;
+
+
+
+
+
+

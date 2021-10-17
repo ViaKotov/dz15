@@ -20,7 +20,7 @@
         .offer__description-link{
             padding: 45px 0 0;
             a{
-                @include valid-button(15px, capitalize, none, $offer-btn-font-color, bold, solid, 2px, $offer-btn-border-color, 5px, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color);
+                @include valid-button(inline-block, 15px, capitalize, none, $offer-btn-font-color, bold, solid, $offer-button-border-width, $offer-btn-border-color, $offer-button-border-radius, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color, $offer-button-vertical-padding, $offer-button-horizontal-padding);
                 transition: $global-transition;
             }
         }

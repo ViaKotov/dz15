@@ -1,0 +1,33 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  header{
+    .menu {
+      .menu__list {
+        font-size: $adaptive-size-lg-header-links-font-size;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-md) {
+
+}
+
+@media screen and (max-width: $adaptive-size-sm) {
+  header{
+    .menu {
+      .menu__list {
+        font-size: $adaptive-size-sm-header-links-font-size;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  header{
+    .menu {
+      .menu__list {
+        font-size: $adaptive-size-xsm-header-links-font-size;
+      }
+    }
+  }
+}

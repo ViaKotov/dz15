@@ -1,0 +1,193 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  .contact {
+    .contact__details{
+      padding: 0 24px;
+      .contact__title{
+        span {
+          font-size: $adaptive-size-lg-title-font-size;
+        }
+      }
+      .contact__subtitle{
+        span {
+          font-size: $adaptive-size-lg-subtitle-font-size;
+        }
+      }
+    }
+    .contact__feedback{
+      .contact__form{
+        padding: 0 0 0 24px;
+        form{
+          .contact__form-button{
+            padding: 39px 0 0;
+            input[type=button]{
+              @include form-button($banner-btn-bg-color, $banner-btn-font-color, $banner-btn-bg-color, $banner-btn-font-color, $adaptive-size-lg-contact-button-border-width, $adaptive-size-lg-contact-button-border-radius, $adaptive-size-lg-contact-button-vertical-padding, $adaptive-size-lg-contact-button-horizontal-padding);
+              font-size: $adaptive-size-lg-contact-button-font-size;
+            }
+          }
+        }
+      }
+      .contact__info{
+        .contact__info-title{
+          span{
+            font-size: $adaptive-size-lg-contact-title-font-size;
+          }
+        }
+        &-address{
+          span{
+            font-size: $adaptive-size-lg-contact-details-font-size;
+          }
+        }
+        &-mail{
+          span{
+            font-size: $adaptive-size-lg-contact-details-font-size;
+          }
+        }
+        &-phone{
+          span{
+            font-size: $adaptive-size-lg-contact-details-font-size;
+          }
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-md) {
+  .contact{
+    .contact__feedback{
+      .contact__form{
+        form{
+          .contact__form-details{
+            flex-direction: column;
+            input[type=text]{
+              width: 100%;
+              padding: 0 5vw;
+            }
+            input[type=email]{
+              width: 100%;
+              margin: 23px 0 0;
+              padding: 0 5vw;
+            }
+          }
+          .contact__form-message{
+            padding: 2.3vw 0 0;
+            textarea{
+              padding: 3.4vw 5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $adaptive-size-sm) {
+  .contact {
+    padding: 89px 0 0;
+    .contact__details{
+      .contact__title{
+        span {
+          font-size: $adaptive-size-sm-title-font-size;
+        }
+      }
+      .contact__subtitle{
+        span {
+          font-size: $adaptive-size-sm-subtitle-font-size;
+        }
+      }
+    }
+    .contact__feedback {
+      flex-direction: column;
+      .contact__form{
+        width: 100%;
+        padding: 0 24px 20px;
+        input[type=button]{
+          font-size: $adaptive-size-sm-contact-button-font-size;
+        }
+      }
+      .contact__info{
+        width: 100%;
+        padding: 24px;
+        .contact__info-title{
+          span{
+            font-size: $adaptive-size-sm-contact-title-font-size;
+          }
+        }
+        &-address{
+          span{
+            font-size: $adaptive-size-sm-contact-details-font-size;
+          }
+        }
+        &-mail{
+          span{
+            font-size: $adaptive-size-sm-contact-details-font-size;
+          }
+        }
+        &-phone{
+          span{
+            font-size: $adaptive-size-sm-contact-details-font-size;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  .contact {
+    .contact__details{
+      padding: 0 24px;
+      .contact__title{
+        span {
+          font-size: $adaptive-size-xsm-title-font-size;
+        }
+      }
+      .contact__subtitle{
+        span {
+          font-size: $adaptive-size-xsm-subtitle-font-size;
+        }
+      }
+    }
+    .contact__feedback{
+      .contact__form{
+        form{
+          .contact__form-button{
+            padding: 39px 0 0;
+            input[type=button]{
+              font-size: $adaptive-size-xsm-contact-button-font-size;
+            }
+          }
+        }
+      }
+      .contact__info{
+        .contact__info-title{
+          span{
+            font-size: $adaptive-size-xsm-contact-title-font-size;
+          }
+        }
+        &-address{
+          span{
+            font-size: $adaptive-size-xsm-contact-details-font-size;
+          }
+        }
+        &-mail{
+          span{
+            font-size: $adaptive-size-xsm-contact-details-font-size;
+          }
+        }
+        &-phone{
+          span{
+            font-size: $adaptive-size-xsm-contact-details-font-size;
+          }
+        }
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

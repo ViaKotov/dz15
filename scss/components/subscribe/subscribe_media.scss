@@ -1,0 +1,80 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  .subscribe__wrapper{
+    .subscribe{
+      padding: 140px 24px;
+      .subscribe__title{
+        span{
+          font-size: $adaptive-size-lg-title-font-size;
+        }
+      }
+      .subscribe__subtitle {
+        span {
+          font-size: $adaptive-size-lg-subtitle-font-size;
+        }
+      }
+      .subscribe__form{
+        .subscribe__form-input{
+          input[type=email]{
+            @include form-input($subscribe-form-input-bg-color, $subscribe-form-input-text-color, $subscribe-form-input-placeholder-color, $adaptive-size-lg-subscribe-input-border-width, $adaptive-size-lg-subscribe-input-border-radius, $adaptive-size-lg-subscribe-input-vertical-padding, $adaptive-size-lg-subscribe-input-horizontal-padding);
+          }
+        }
+        .subscribe__form-button{
+          input[type=button]{
+            @include form-button($banner-btn-bg-color, $banner-btn-font-color, $banner-btn-bg-color, $banner-btn-font-color, $adaptive-size-lg-contact-button-border-width, $adaptive-size-lg-contact-button-border-radius,  $adaptive-size-lg-contact-button-vertical-padding, $adaptive-size-lg-contact-button-horizontal-padding);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-md) {
+
+}
+
+@media screen and (max-width: $adaptive-size-sm) {
+  .subscribe__wrapper{
+    .subscribe{
+      .subscribe__title{
+        font-size: $adaptive-size-sm-title-font-size;
+      }
+      .subscribe__subtitle {
+        span {
+          font-size: $adaptive-size-sm-subtitle-font-size;
+        }
+      }
+      .subscribe__form{
+        flex-wrap: wrap;
+        width: 100%;
+        .subscribe__form-input, .subscribe__form-button{
+          padding: 0;
+          max-width: 100%;
+        }
+        .subscribe__form-button{
+          padding: 15px 0 0;
+          font-size: $adaptive-size-sm-subscribe-button-font-size;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  .subscribe__wrapper{
+    .subscribe{
+      .subscribe__title{
+        font-size: $adaptive-size-xsm-title-font-size;
+      }
+      .subscribe__subtitle {
+        span {
+          font-size: $adaptive-size-xsm-subtitle-font-size;
+        }
+      }
+      .subscribe__form{
+        .subscribe__form-button{
+          font-size: $adaptive-size-xsm-subscribe-button-font-size;
+        }
+      }
+    }
+  }
+}

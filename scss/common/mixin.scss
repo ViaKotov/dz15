@@ -1,14 +1,14 @@
-@mixin valid-button($font-size, $txt-transform, $txt-deco, $txt-col, $font-weight, $brdr-type, $brdr-width, $brdr-col, $brdr-rad, $bg-col, $txt-hover-col, $txt-hover-bg-col){
-    @extend %button-padding;
+@mixin valid-button($display, $font-size, $txt-transform, $txt-deco, $txt-col, $font-weight, $border-type, $border-width, $border-col, $border-rad, $bg-col, $txt-hover-col, $txt-hover-bg-col, $padding-vertical, $padding-horizontal){
     font-size: $font-size;
     text-transform: $txt-transform;
     text-decoration: $txt-deco;
     color: $txt-col;
     font-weight: $font-weight;
-    border: $brdr-type $brdr-width $brdr-col;
-    border-radius: $brdr-rad;
+    border: $border-type $border-width $border-col;
+    border-radius: $border-rad;
     background-color: $bg-col;
-    display: inline-block;
+    padding: $padding-vertical $padding-horizontal;
+    display: $display;
     &:hover{
         color: $txt-hover-col;
         background-color: $txt-hover-bg-col;
@@ -29,22 +29,18 @@
 @mixin pseudo-strip($margin-top, $margin-left, $margin-bottom, $margin-right){
     &::after{
         margin: $margin-top $margin-left $margin-bottom $margin-right;
-        content: '';
-        display: block;
-        height: 2px;
-        width: 131px;
-        background-color: $global-strip-color;
+        @extend %pseudo-strip;
     }
 }
 
-@mixin form-button($bg-color, $text-color, $bg-hover-color, $text-hover-color){
+@mixin form-button($bg-color, $text-color, $bg-hover-color, $text-hover-color, $border-width, $border-radius, $padding-vertical, $padding-horizontal){
     background-color: $bg-color;
-    border: solid 2px $bg-color;
-    padding: 25px 50px;
+    border: solid $border-width $bg-color;
+    padding: $padding-vertical $padding-horizontal;
     color: $text-color;
     text-transform: uppercase;
     font-weight: bold;
-    @extend %form-border-radius;
+    border-radius: $border-radius;
     transition: $global-transition;
     &:hover{
         border-color: $bg-hover-color;
@@ -54,8 +50,16 @@
     }
 }
 
-@mixin placeholder-color($placeholder-color){
+@mixin form-input($background-color, $text-color, $placeholder-color, $border-width, $border-radius, $padding-vertical, $padding-horizontal){
+    @extend %remove-focus-outline;
+    @extend %form-input;
+    background-color: $background-color;
+    color: $text-color;
+    border: solid $border-width transparent;
+    border-radius: $border-radius;
+    padding: $padding-vertical $padding-horizontal;
     &::placeholder{
         color: $placeholder-color;
     }
 }
+

@@ -7,18 +7,17 @@ footer{
             align-items: center;
             flex-wrap: wrap;
             .footer__copyright{
+                width: 70%;
                 color: $subtitle-medium-font-color;
             }
             .footer__social{
+                width: 30%;
                 ul{
                     display: flex;
                     padding: 47px 0 31px;
+                    justify-content: space-evenly;
                     li{
-                        display: inline-block;
                         list-style: none;
-                        &:not(:last-child){
-                            padding: 0 18px 0 0;
-                        }
                         a{
                             &:hover{
                                 img{

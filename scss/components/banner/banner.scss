@@ -34,7 +34,7 @@
             .banner__description-link{
                 padding: 30px 0 0;
                 a{
-                    @include valid-button(16px, capitalize, none, $banner-btn-font-color, 600, solid, 2px, $offer-btn-border-color, 5px, $banner-btn-bg-color, $banner-btn-bg-color, $offer-btn-bg-color);
+                    @include valid-button(inline-block, 16px, capitalize, none, $banner-btn-font-color, 600, solid, $offer-button-border-width, $offer-btn-border-color, $offer-button-border-radius, $banner-btn-bg-color, $banner-btn-bg-color, $offer-btn-bg-color, $banner-button-vertical-padding, $banner-button-horizontal-padding);
                     transition: .2s;
                 }
             } 
@@ -43,7 +43,7 @@
         {
             display: flex;
             flex-wrap: wrap;
-            box-shadow: 0px 0px 60px rgba($color: #7c7a71, $alpha: 0.6);
+            box-shadow: 0 0 60px rgba($color: #7c7a71, $alpha: 0.6);
         }
     }
 }

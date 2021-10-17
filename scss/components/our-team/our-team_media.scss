@@ -1,0 +1,157 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  .our-team{
+    padding: 102px 24px 110px;
+    .our-team__text{
+      .our-team__text-title{
+        span{
+          font-size: $adaptive-size-lg-title-font-size;
+        }
+      }
+      .our-team__text-subtitle{
+        span{
+          font-size: $adaptive-size-lg-subtitle-font-size;
+        }
+      }
+    }
+    .our-team__info{
+      .our-team__details{
+        padding: 0 0 0 7.2vw;
+        .our-team__person-info{
+          .our-team__person-name{
+            span{
+              font-size: $adaptive-size-lg-our-team-person-name-font-size;
+            }
+          }
+          .our-team__person-about{
+            span{
+              font-size: $adaptive-size-lg-our-team-person-details-font-size;
+            }
+          }
+          .our-team__person-links{
+            ul{
+              font-size: $adaptive-size-lg-our-team-links-font-size;
+            }
+          }
+        }
+        .our-team__other-members {
+          .our-team__member{
+            a {
+              font-size: $adaptive-size-lg-our-team-member-link-font-size;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $adaptive-size-md) {
+
+}
+
+@media screen and (max-width: $adaptive-size-sm) {
+  .our-team {
+    .our-team__text{
+      .our-team__text-title{
+        span{
+          font-size: $adaptive-size-sm-title-font-size;
+        }
+      }
+      .our-team__text-subtitle{
+        span{
+          font-size: $adaptive-size-sm-subtitle-font-size;
+        }
+      }
+    }
+    .our-team__info {
+      flex-direction: column;
+      .our-team__details{
+        padding: 0;
+        .our-team__person-info{
+          .our-team__person-name {
+            span {
+              font-size: $adaptive-size-sm-our-team-person-name-font-size;
+            }
+          }
+          .our-team__person-about {
+            span {
+              font-size: $adaptive-size-sm-our-team-person-details-font-size;
+            }
+          }
+          .our-team__person-links {
+            ul {
+              font-size: $adaptive-size-sm-our-team-links-font-size;
+              justify-content: space-evenly;
+            }
+          }
+        }
+        .our-team__other-members{
+          .our-team__member{
+            a{
+              font-size: $adaptive-size-sm-our-team-member-link-font-size;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  .our-team {
+    .our-team__text{
+      .our-team__text-title{
+        span{
+          font-size: $adaptive-size-xsm-title-font-size;
+        }
+      }
+      .our-team__text-subtitle{
+        span{
+          font-size: $adaptive-size-xsm-subtitle-font-size;
+        }
+      }
+    }
+    .our-team__info {
+      .our-team__photo{
+        img{
+          width: 100%;
+        }
+      }
+      .our-team__details{
+        padding: 0;
+        .our-team__person-info{
+          .our-team__person-name{
+            span{
+              font-size: $adaptive-size-xsm-our-team-person-name-font-size;
+            }
+          }
+          .our-team__person-about{
+            span{
+              font-size: $adaptive-size-xsm-our-team-person-details-font-size;
+            }
+          }
+          .our-team__person-links{
+            ul{
+              font-size: $adaptive-size-xsm-our-team-links-font-size;
+            }
+          }
+        }
+        .our-team__other-members{
+          flex-wrap: wrap;
+          .our-team__member{
+            width: calc(50% - 5px);
+            padding: 10px 5px;
+            a{
+              width: calc(100% - 10px);
+              padding: 10px 0;
+              bottom: 10px;
+              left: 5px;
+              font-size: $adaptive-size-xsm-our-team-member-link-font-size;
+            }
+          }
+        }
+      }
+    }
+  }
+}

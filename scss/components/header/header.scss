@@ -4,12 +4,12 @@ header{
     background-color: $second-bg-color;
     .menu{
         background-color: $nav-bg-common-color;
-        font-size: 14px;
         .menu__list
         {
             display: flex;
             justify-content: center;
             text-transform: uppercase;
+            font-size: 14px;
             .menu__list-item
             {
                 display: inline;

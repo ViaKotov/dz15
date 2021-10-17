@@ -26,13 +26,7 @@
                 width: 100%;
                 max-width: 520px;
                 input[type=email]{
-                    border-color: transparent;
-                    width: 100%;
-                    border-radius: 5px;
-                    padding: 25px 36px;
-                    color: $offer-font-color;
-                    @include placeholder-color($offer-font-color);
-                    @extend %remove-focus-outline;
+                    @include form-input($subscribe-form-input-bg-color, $subscribe-form-input-text-color, $subscribe-form-input-placeholder-color, 2px, 5px, 25px, 36px);
                 }
             }
             .subscribe__form-button{
@@ -40,7 +34,7 @@
                 max-width: 214px;
                 input[type=button]{
                     width: 100%;
-                    @include form-button($banner-btn-bg-color, $banner-btn-font-color, $banner-btn-bg-color, $banner-btn-font-color);
+                    @include form-button($banner-btn-bg-color, $banner-btn-font-color, $banner-btn-bg-color, $banner-btn-font-color, 2px, 2px, 25px, 50px);
                 }
             }
         }

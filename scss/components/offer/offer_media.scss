@@ -1,0 +1,112 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  .offer {
+    padding: 110px 24px 0;
+    .offer__description{
+      .offer__description-title{
+        span{
+          font-size: $adaptive-size-lg-title-font-size;
+        }
+      }
+      .offer__description-subtitle{
+        font-size: $adaptive-size-lg-subtitle-font-size;
+      }
+      .offer__description-link{
+        a{
+          @include valid-button(inline-block, $adaptive-size-lg-offer-button-font-size, capitalize, none, $offer-btn-font-color, bold, solid, $adaptive-size-lg-offer-button-border-width, $offer-btn-border-color, $adaptive-size-lg-offer-button-border-radius, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color, $adaptive-size-lg-offer-button-vertical-padding, $adaptive-size-lg-offer-button-horizontal-padding);
+        }
+      }
+    }
+    .offer__items{
+      .offer__items-item{
+        .offer__item-title{
+          font-size: $adaptive-size-lg-offer-item-title-font-size;
+        }
+        .offer__item-description{
+          font-size: $adaptive-size-lg-offer-item-subtitle-font-size;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: $adaptive-size-md) {
+
+}
+
+@media screen and (max-width: $adaptive-size-sm) {
+  .offer{
+    flex-direction: column;
+    .offer__description, .offer__items{
+      width: 100%;
+    }
+    .offer__description{
+      .offer__description-title{
+        span{
+          font-size: $adaptive-size-sm-title-font-size;
+        }
+      }
+      .offer__description-subtitle{
+        font-size: $adaptive-size-sm-subtitle-font-size;
+      }
+      .offer__description-link{
+        a{
+          @include valid-button(inline-block, $adaptive-size-sm-offer-button-font-size, capitalize, none, $offer-btn-font-color, bold, solid, $adaptive-size-sm-offer-button-border-width, $offer-btn-border-color, $adaptive-size-sm-offer-button-border-radius, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color, $adaptive-size-sm-offer-button-vertical-padding, $adaptive-size-sm-offer-button-horizontal-padding);
+        }
+      }
+    }
+    .offer__items{
+      padding: 25px 0 0;
+      align-items: stretch;
+      .offer__items-item{
+        max-width: 50%;
+        padding: 0 10px 50px;
+        .offer__item-title{
+          font-size: $adaptive-size-sm-offer-item-title-font-size;
+        }
+        .offer__item-description{
+          font-size: $adaptive-size-sm-offer-item-subtitle-font-size;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  .offer {
+    flex-direction: column;
+    .offer__description, .offer__items{
+      width: 100%;
+    }
+    .offer__description{
+      .offer__description-title{
+        span{
+          font-size: $adaptive-size-xsm-title-font-size;
+        }
+      }
+      .offer__description-subtitle{
+        font-size: $adaptive-size-xsm-subtitle-font-size;
+      }
+      .offer__description-link{
+        a{
+          @include valid-button(block, $adaptive-size-xsm-offer-button-font-size, capitalize, none, $offer-btn-font-color, bold, solid, $adaptive-size-xsm-offer-button-border-width, $offer-btn-border-color, $adaptive-size-xsm-offer-button-border-radius, $offer-btn-bg-color, $offer-btn-bg-color ,$offer-btn-font-color, $adaptive-size-xsm-offer-button-vertical-padding, $adaptive-size-xsm-offer-button-horizontal-padding);
+          text-align: center;
+        }
+      }
+    }
+    .offer__items{
+      padding: 25px 0 0;
+      flex-direction: column;
+      align-items: stretch;
+      .offer__items-item{
+        max-width: 100%;
+        .offer__item-title{
+          font-size: $adaptive-size-xsm-offer-item-title-font-size;
+        }
+        .offer__item-description{
+          font-size: $adaptive-size-xsm-offer-item-subtitle-font-size;
+        }
+      }
+    }
+  }
+}

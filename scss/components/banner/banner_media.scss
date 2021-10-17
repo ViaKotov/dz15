@@ -1,0 +1,96 @@
+@media screen and (max-width: $adaptive-size-lg) {
+  .banner__wrapper {
+    padding: 100px 24px 111px;
+    .banner {
+      .banner__description{
+        .banner__description-title{
+          span{
+            font-size: $adaptive-size-lg-main-title-font-size;
+          }
+        }
+        .banner__description-subtitle{
+          p{
+            font-size: $adaptive-size-lg-main-subtitle-font-size;
+          }
+        }
+        .banner__description-link{
+          a{
+            @include valid-button(inline-block, $adaptive-size-lg-banner-button-font-size, capitalize, none, $banner-btn-font-color, 600, solid, $adaptive-size-lg-banner-button-border-width, $offer-btn-border-color, $adaptive-size-lg-banner-button-border-radius, $banner-btn-bg-color, $banner-btn-bg-color, $offer-btn-bg-color, $adaptive-size-xsm-banner-button-vertical-padding, $adaptive-size-xsm-banner-button-horizontal-padding);
+          }
+        }
+      }
+      .banner__video {
+        width: 50%;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: $adaptive-size-md) {
+
+}
+
+@media screen and (max-width: $adaptive-size-sm) {
+  .banner__wrapper{
+    .banner{
+      justify-content: center;
+      .banner__description{
+        width: 100%;
+        padding: 0 0 20px;
+        .banner__description-title{
+          span{
+            font-size: $adaptive-size-sm-main-title-font-size;
+          }
+        }
+        .banner__description-subtitle{
+          p{
+            font-size: $adaptive-size-sm-main-subtitle-font-size;
+          }
+        }
+        .banner__description-link{
+          a{
+            @include valid-button(block, $adaptive-size-sm-banner-button-font-size, capitalize, none, $banner-btn-font-color, 600, solid, $adaptive-size-sm-banner-button-border-width, $offer-btn-border-color, $adaptive-size-sm-banner-button-border-radius, $banner-btn-bg-color, $banner-btn-bg-color, $offer-btn-bg-color, $adaptive-size-sm-banner-button-vertical-padding, $adaptive-size-xsm-banner-button-horizontal-padding);
+          }
+        }
+      }
+      .banner__video{
+        width: 100%;
+        iframe{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $adaptive-size-xsm) {
+  .banner__wrapper{
+    padding: 50px 24px 55px;
+    .banner{
+      .banner__description{
+        width: 100%;
+        .banner__description-title{
+          span{
+            font-size: $adaptive-size-xsm-main-title-font-size;
+          }
+        }
+        .banner__description-subtitle{
+          p{
+            font-size: $adaptive-size-xsm-main-subtitle-font-size;
+          }
+        }
+        .banner__description-link{
+          a{
+            @include valid-button(block, $adaptive-size-xsm-banner-button-font-size, capitalize, none, $banner-btn-font-color, 600, solid, $adaptive-size-lg-banner-button-border-width, $offer-btn-border-color, $adaptive-size-lg-banner-button-border-radius, $banner-btn-bg-color, $banner-btn-bg-color, $offer-btn-bg-color, $adaptive-size-xsm-banner-button-vertical-padding, $adaptive-size-xsm-banner-button-horizontal-padding);
+            text-align: center;
+          }
+        }
+      }
+      .banner__video{
+        display: none;
+      }
+    }
+  }
+}

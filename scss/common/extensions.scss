@@ -8,13 +8,6 @@
     flex-direction: row;
 }
 
-%button-padding{
-    padding: 16px 70px;
-}
-
-%form-border-radius{
-    border-radius: 5px;
-}
 
 %dark-title{
     text-transform: uppercase;
@@ -42,8 +35,40 @@
 }
 
 
+%pseudo-strip{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 131px;
+    background-color: $global-strip-color;
+}
+
+%image-hover-link{
+    position: absolute;
+    width: 100%;
+    padding: 10px 5px;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: $global-transition;
+    &:hover{
+        color:$nav-font-color;
+        background: rgba($color: #000000, $alpha: 0.8);
+    }
+}
+
 %remove-focus-outline{
     &:focus-visible{
         outline: none;
     }
 }
+
+%form-input{
+    border-color: transparent;
+    width: 100%;
+}
+
